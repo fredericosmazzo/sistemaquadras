@@ -1,0 +1,328 @@
+/* CONFIGURAÇÕES DADOS */
+
+.box1{
+    width: 19cm;
+
+    padding: 0.1cm 0.1cm 0.1cm 0.1cm;
+    border: solid #d4d0c8 1px;
+}
+
+.box2{
+    width: 19cm;
+    padding-left: 0.25cm;
+    padding-right: 0.25cm;
+    padding-bottom: 0.15cm;
+    padding-top: 0.15cm;
+    border: solid #d4d0c8 1px;
+}
+
+.box_detalhes{
+    padding-left: 0.25cm;
+    padding-right: 0.25cm;
+    padding-bottom: 0.15cm;
+    padding-top: 0.15cm;
+    border: solid #d4d0c8 1px;
+}
+
+.box_detalhes2{
+    padding-left: 0.25cm;
+    padding-right: 0.25cm;
+    padding-bottom: 0.15cm;
+    padding-top: 0.15cm;
+}
+/* CONFIGURAÇÕES DADOS */
+.separador {
+    border-top: solid 1px #b9bdb6;
+    margin-top:0.38cm;
+    margin-bottom: 0.38cm;
+}
+
+.separador2 {
+    border-top: solid 1px #b9bdb6;
+    margin-top:0.15cm;
+    margin-bottom: 0.15cm;
+}
+
+.borda-esquerda{
+    border-left: solid 1px #b9bdb6;
+}
+
+.borda-direita{
+    border-right: solid 1px #b9bdb6;
+}
+
+.m-esquerda{
+    margin-left:0.25cm;
+}
+
+.m-direita{
+    margin-right:0.25cm;
+}
+
+.m-top{
+    margin-top:0.75cm;
+}
+
+.m2-top{
+    margin-top:0.25cm;
+}
+
+.m-botton{
+    margin-top:0.75cm;
+}
+
+.esquerda{
+    text-align: left;
+}
+
+.direita{
+    text-align: right;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.centralizar{
+    text-align: center;
+}
+
+.espaco-linhas-top{
+    padding-top: 0.25cm;
+}
+
+.espaco-linhas-bottom{
+    padding-bottom: 0.25cm;
+}
+
+.espaco-linhas-assinar{
+    padding-top: 2cm;
+}
+
+.paragrafo {
+    text-indent: 2.5cm;
+    text-align: justify;
+    line-height: 1.75;
+}
+
+.listas{
+    text-indent: 10px;
+}
+
+.linha{
+    line-height: 1.25;
+}
+
+.linha2{
+    line-height: 1.5;
+}
+
+.linha3{
+    line-height: 1.75;
+}
+
+.quebrar{
+    page-break-before: always;
+}
+
+.quebrar2{
+    page-break-after: always;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.ebrima{
+    font-family:Ebrima;
+}
+
+.fonte-10{font-size:10px;}
+
+.fonte-11{font-size:11px;}
+
+.fonte-12{font-size:12px;}
+
+.fonte-13{font-size:13px;}
+
+.fonte-14{font-size:14px;}
+
+.fonte-15{font-size:15px;}
+
+.fonte-16{font-size:16px;}
+
+.fonte-17{font-size:17px;}
+
+.fonte-18{font-size:18px;}
+
+.fonte-19{font-size:19px;}
+
+.fonte-20{font-size:20px;}
+
+.fonte-21{font-size:21px;}
+
+.fonte-22{font-size:22px;}
+
+.padding-esquerda{padding-left: 0.25cm;}
+
+.padding-menu{padding-left: 11.5cm;}
+
+
+.top-mais {
+  margin-top: 0.25cm;
+}
+
+#box-topo{
+
+    width: 98%;
+
+}
+
+#texto{
+    clear: both;
+    text-align: center;
+    font-size: 14px; 
+}
+
+* {
+    box-sizing: border-box;
+}
+.caixa_dados {
+    border: 1px solid red;
+    padding: 15px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.left{
+   text-align: left;
+   padding-left: 50px;
+}
+
+.right{
+    text-align: right;
+    padding-right: 25px;
+}
+
+/* FORMATAÇÕES CORPO */
+
+.tituloRegistro{
+    text-align: center;
+    font-family: Ebrima;
+    font-size: 22px;
+    font-weight: bold;
+    padding-left:350px;
+    padding-right:350px;
+    padding-top: 50px;
+}
+
+.subtituloRegistro{
+    text-align: center;
+    font-family: Ebrima;
+    font-size: 14px;
+    padding-left:250px;
+    padding-right:250px;
+    padding-top: 3px;
+}
+
+.botao {
+    width: 85px;
+}
+
+.padding-box {
+
+    margin: 10px, 10px, 10px, 10px;
+}
+
+       @page {
+            margin: 120px 30px 80px 30px;
+        }
+        #head{
+            background-image: url("fad.jpg");
+            background-repeat: no-repeat;
+            font-size: 14px;
+            text-align: center;
+            height: 80px;
+            width: 100%;
+            position: fixed;
+            top: -115px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            padding-bottom: 30px;
+        }
+        #corpo{
+            width: 95%;
+            position: relative;
+            margin: auto;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            position: relative;
+        }
+        td{
+            padding: 3px;
+        }
+        #footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            border-top: 1px solid gray;
+            font-size: 9px;
+        }
+        #footer .page:after{ 
+            
+        }
+
+        .coluna {
+            width: 165px;
+        }
+
+        .alinharCalendario {
+
+            text-align: center;
+        }
+
+.box-alerta-tamanho {
+
+        width: 85%;
+        margin: 0 auto;
+}

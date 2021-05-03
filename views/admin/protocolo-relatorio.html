@@ -1,0 +1,119 @@
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h3 class="m-0">SEMAS | DIGITAL</h3>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="/admin">Semas</a></li>
+              <li class="breadcrumb-item"><a href="/admin/protocolo/inicio">Protocolo</a></li>
+              <li class="breadcrumb-item active">Início Protocolo</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card card-primary card-outline">
+              <div class="card-header">
+                <h5 class="m-0">Bem vindo ao Protocolo</h5>
+              </div>
+            </div>
+          </div>
+          <!-- /.col-md-6 -->
+          <div class="col-lg-12">
+            <div class="card card-primary card-outline">
+              <div class="card-header">
+                <h5 class="m-0"><strong>DADOS DO DOCUMENTO</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <button type="button" class="btn btn-outline-success"><i class="fas fa-envelope"></i></button>&nbsp;
+                  <a href="/impressoes/relatorio/{$dadosDocumento.ID}" target="_blak"><button type="button" class="btn btn-outline-primary"><i class="fas fa-print"></i></button></a>
+                </h5>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                    <div class="col-2"><span class="text-primary h5"><strong>Nº:&nbsp;</strong></span><span class="text-muted h5">{$dadosDocumento.Documento}/{$dadosDocumento.Ano}</span></div>
+                    <div class="col-4"><span class="text-primary h5"><strong>Tipo Documento:&nbsp;</strong></span><span class="text-muted h5">{$dadosDocumento.Tipo}</span></div>
+                    <div class="col-4"><span class="text-primary h5"><strong>Origem:&nbsp;</strong></span><span class="text-muted h5">{$dadosDocumento.Origem}</span></div>
+                    <div class="col-2"><span class="text-primary h5"><strong>Recebido:&nbsp;</strong></span><span class="text-muted h5">{$dadosDocumento.Entrada}</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.col-md-6 -->
+          <div class="col-lg-12">
+            <div class="card card-primary card-outline">
+              <div class="card-header">
+                <h5 class="m-0"><strong>MOVIMENTAÇÃO DO DOCUMENTO</strong></h5>
+              </div>
+              <div class="card-body">
+                <table id="movimentoProtocolo" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>Nº</th>
+                    <th>Protocolo</th>
+                    <th>Origem</th>
+                    <th>Destino</th>
+                    <th>Referência</th>
+                    <th>Resposável</th>
+                    <th style="width: 100px; text-align: center;">Recibo</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                   {loop="$protocolosRelatorio"}
+                  <tr>
+                    <td>{$value.Documento}/{$value.Ano}</td>
+                    <td>{$value.Saida}</td>
+                    <td>{$value.Origem}</td>
+                    <td>{$value.Destino}</td>
+                    <td>{$value.Referencia}</td>
+                    <td>{function="cadastrante($value.Cadastrante)"}</td>
+                    <td style="width: 100px; text-align: center;">
+                      <button type="button" class="btn btn-outline-success"><i class="fas fa-envelope"></i></button>&nbsp;
+                      <a href="/impressoes/recibo/{$value.ID}/{$value.IDEntrada}" target="_blak"><button type="button" class="btn btn-outline-primary"><i class="fas fa-print"></i></button></a>
+                    </td>
+                  </tr>
+                    {/loop}
+                  </tbody>
+                  <tfoot>
+                  <tr>
+                    <th>Nº</th>
+                    <th>Protocolo</th>
+                    <th>Origem</th>
+                    <th>Destino</th>
+                    <th>Referência</th>
+                    <th>Resposável</th>
+                    <th style="width: 100px; text-align: center;">Recibo</th>
+                  </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar  -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3">
+      <h5>Title</h5>
+      <p>Sidebar content</p>
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
